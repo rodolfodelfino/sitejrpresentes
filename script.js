@@ -32,3 +32,4 @@ function checkout() {
         alert("Seu carrinho está vazio. Adicione produtos antes de finalizar a compra.");
     }
 }
+

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Página de Vendas</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
         <img id="logo" src="img/logo.png" alt="">
-        <nav>
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <nav class="nav-menu">
             <a href="index.html">Home</a>
             <a href="utiliadades.html">Utilidades</a>
             <a href="cama_mesa_banho.html">Cama Mesa e Banho</a>
@@ -133,6 +135,17 @@
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add("active");
         }, 5000);
+
+        
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+
+    
+
     </script>
 </body>
 </html>

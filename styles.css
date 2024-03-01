@@ -223,7 +223,7 @@ body {
 
  .btn{
     display: inline-block;
-    padding: 40px;
+    padding: 20px;
     background-color: #154be0;
     color: #fff;
     text-decoration: none;
@@ -286,4 +286,47 @@ form {
     background-color: #f2f2f2;
     font-weight: bold;
   }
+ .menu-toggle{
+  display: none;
+ }
+  
 
+/* Media query para exibir o menu em telas menores */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #333333;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+    color: #efeff1;
+}
+
+/* Estilo da navegação */
+.nav-menu {
+    display: none;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fffcfc;
+    transition: background 0.3s;
+}
+
+.nav-menu a:hover {
+    background: #f0f0f0;
+}
+
+/* Estilo da navegação expandida */
+.nav-menu.active {
+    display: block;
+}
+}
